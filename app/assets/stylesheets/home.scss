@@ -1,0 +1,105 @@
+$margin: 10px;
+$margin-item: 4px;
+$bloc-color: #45576F;
+$item-color: #333c4b;
+$rd: 7px;
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption);
+
+.bloc {
+  background-color: $bloc-color;
+  overflow: hidden;
+  border-radius: $rd;
+}
+
+.bloc ul {height: 100%}
+
+.title {
+    text-align: center;
+    color: #FFF;
+    margin: $margin 0 $margin 0;
+}
+
+.item {
+  height: 35px;
+  padding: 15px 0 0 10px;
+  transition: 0.5s;
+}
+
+.item:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: 0.5px 0.5px #fff;
+}
+
+.item-clicked {
+  background: #fff;
+  color: #000;
+  text-shadow: 0.5px 0.5px #fff;
+}
+
+#lists {
+  margin: $margin calc(#{$margin} / 2) $margin $margin;
+  display: inline-block;
+  float: left;
+  width: calc(30% - #{$margin} * 2);
+  height: calc(100% - #{$margin} * 2);
+}
+
+#active_tasks {
+  margin: $margin $margin calc(#{$margin} / 2) calc(#{$margin} / 2);
+  margin-left: calc($margin / 2);
+  display: inline-block;
+  float: right;
+  width: calc(70% - #{$margin});
+  height: calc(70% - #{$margin} * 2);
+}
+
+#deleted_tasks {
+  margin: calc(#{$margin} / 2) $margin $margin calc(#{$margin} / 2);
+  display: inline-block;
+  float: right;
+  width: calc(70% - #{$margin});
+  height: calc(30% - #{$margin});
+}
+
+.item-light-1 {background-color: $item-color}
+.item-light-2 {background-color: lighten( $item-color, 2.5% )}
+.item-light-3 {background-color: lighten( $item-color, 5% )}
+.item-light-4 {background-color: lighten( $item-color, 7.5% )}
+.item-light-5 {background-color: lighten( $item-color, 10% )}
+.item-light-6 {background-color: lighten( $item-color, 12.5% )}
+.item-light-7 {background-color: lighten( $item-color, 15% )}
+.item-light-8 {background-color: lighten( $item-color, 17.5% )}
+.item-light-9 {background-color: lighten( $item-color, 20% )}
+.item-light-10 {background-color: lighten( $item-color, 22.5% )}
+.item-light-11 {background-color: lighten( $item-color, 25% )}
+.item-light-12 {background-color: lighten( $item-color, 27.5% )}
+.item-light-13 {background-color: lighten( $item-color, 30% )}
+.item-light-14 {background-color: lighten( $item-color, 32.5% )}
+.item-light-15 {background-color: lighten( $item-color, 35% )}
+.item-light-16 {background-color: lighten( $item-color, 37.5% )}
+.item-light-17 {background-color: lighten( $item-color, 40% )}
+.item-light-18 {background-color: lighten( $item-color, 42.5% )}
+.item-light-19 {background-color: lighten( $item-color, 45% )}
+.item-light-20 {background-color: lighten( $item-color, 47.5% )}
+.item-light-21 {background-color: lighten( $item-color,50% )}
+.item-light-22 {background-color: lighten( $item-color, 52.5% )}
+.item-light-23 {background-color: lighten( $item-color, 55% )}
+.item-light-24 {background-color: lighten( $item-color, 57.5% )}
+.item-light-25 {background-color: lighten( $item-color, 60% )}
+.item-light-26 {background-color: lighten( $item-color, 62.5% )}
+.item-light-27 {background-color: lighten( $item-color, 65% )}
+.item-light-28 {background-color: lighten( $item-color, 67.5% )}
+.item-light-29 {background-color: lighten( $item-color, 70% )}
+.item-light-30 {background-color: lighten( $item-color, 72.5% )}
+.item-light-31 {background-color: lighten( $item-color, 75% )}
+.item-light-32 {background-color: lighten( $item-color, 77.5% )}
+.item-light-33 {background-color: lighten( $item-color, 80% )}
+.item-light-34 {background-color: lighten( $item-color, 82.5% )}
+.item-light-35 {background-color: lighten( $item-color, 85% )}
+.item-light-36 {background-color: lighten( $item-color, 87.5% )}
+.item-light-37 {background-color: lighten( $item-color, 90% )}
+.item-light-38 {background-color: lighten( $item-color, 92.5% )}
+.item-light-39 {background-color: lighten( $item-color, 95% )}
+.item-light-40 {background-color: lighten( $item-color, 97.5% )}

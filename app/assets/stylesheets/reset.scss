@@ -1,0 +1,27 @@
+$back-color: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: #ffffff;
+  text-shadow: 0.5px 0.5px #000000;
+}
+html, body {height: 100%; background-color: $back-color}
+a{text-decoration:none;}
+img{max-width:100%;}
+li { list-style: none; }
+.both {clear: both;}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix:before {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="~/assets/stylesheets/stylesheet.css"/>
+    <title>ToDo</title>
+  </head>
+  <body>
+    <div id="lists" class="bloc">
+      <ul>
+        <li class="title">Lists</li>
+        <%
+          i = 1
+          @lists.each do |list|
+        %>
+          <li id="<%= list.id%>" class="item item-light-<%= i %>"><%= list.name %></li>
+        <%
+          i += 1
+          end
+        %>
+      </ul>
+    </div>
+
+    <div id="active_tasks" class="bloc">
+      <ul>
+        <li class="title"><%= @first_list.name %>'s tasks</li>
+        <%
+          i = 1
+          @active_tasks.each do |task|
+        %>
+          <li id="<%= task.id %>" class="item item-light-<%= i %>"><%= task.content %></li>
+        <%
+          i += 1
+          end
+        %>
+      </ul>
+    </div>
+
+    <div id="deleted_tasks" class="bloc">
+      <ul>
+        <li class="title">History</li>
+        <%
+          i = 1
+          @deleted_tasks.each do |task|
+        %>
+          <li id="<%= task.id %>" class="item item-light-<%= i %>"><%= task.content %></li>
+        <%
+          i += 1
+          end
+        %>
+      </ul>
+    </div>
+  </body>
+</html>
