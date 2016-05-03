@@ -9,6 +9,7 @@ class TaskController < ApplicationController
 
     if @rs_tasks
       @tasks = @rs_tasks.where("is_deleted = #{@is_deleted}")
+      @tasks = nil unless @tasks.any?
     else
       @tasks = nil
     end
