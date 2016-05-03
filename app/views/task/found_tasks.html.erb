@@ -1,0 +1,27 @@
+<% if @tasks %>
+  <li class="title">
+    <% if @is_deleted == "1" %>
+      History
+    <% else %>
+      <%= @list.name %>'s tasks
+    <% end %>
+  </li>
+  <%
+    i = 1
+    @tasks.each do |task|
+  %>
+    <li id="<%= task.id %>" class="item item-light-<%= i %>"><%= task.content %></li>
+  <%
+    i += 1
+    end
+  %>
+<% else %>
+  <li class="title">
+    <% if @is_deleted == "1" %>
+      History
+    <% else %>
+      <%= @list.name %>'s tasks
+    <% end %>
+  </li>
+  <li class="item item-light-1">No tasks found</li>
+<% end %>
